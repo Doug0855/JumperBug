@@ -1,10 +1,18 @@
 public class Jumper extends Actor {
 	
-	public static void main(String[] args) {
+	public class JumperBug() {
 		
-	} 
+	}
 
-	public boolean CanJump() 
+    public void act(){
+        if (canJump()) {
+            jump();
+        } else {
+            
+        }
+    } 
+
+	public boolean canJump() 
     {
         Grid<Actor> gr = getGrid();
         if (gr == null)
